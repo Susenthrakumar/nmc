@@ -1,0 +1,289 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+       
+
+/* Main Header */
+.mains-header {
+    display: flex;
+    justify-content: flex-start; /* Space between logo and menu */
+    align-items: center;
+    font-family: 'Garamond', serif;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1200px; /* Optional: You can adjust max width to suit your needs */
+    margin: 0 auto; /* Ensures the header is centered on the page */
+}
+
+
+/* Logo Box */
+.logo-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns logo to the right */
+    width: 220px; /* Adjust width as needed */
+    height: 60px; /* Fixed height */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+
+/* Logo Image */
+.logo img {
+    width: 220%; /* Increase the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+    margin-right: 280px;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    margin-right: -5px;/* Right left move pana*/
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a.active {
+    background-color:rgb(0, 34, 145); /* Active background */
+    color: white; /* Active text color */
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    background-color:rgb(0, 34, 145); /* Hover background */
+    color: #fff; /* Hover text color */
+}
+
+
+
+
+
+         /* Dropdown styles */
+         .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            white-space: nowrap; /* Prevents text wrapping */
+            border-radius: 5px; /* Rounded corners */
+        }
+        
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Keep rounded corners clean */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgb(0, 34, 145);
+        }
+
+
+
+
+
+
+
+
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+    background: rgb(0, 34, 145);
+    padding: 5px 5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px; /* Added space below the breadcrumb section */
+}
+
+.breadcrumb-section h1 {
+    font-size: 32px;
+    color: white;
+    margin: 0 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-section .breadcrumbs {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-section .breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.breadcrumb-section .breadcrumbs a:hover {
+    text-decoration: underline;
+    color: white; /* Changes the color to red */
+}
+
+
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            padding: 20px;
+        }
+        .sidebar button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px;
+            border: none;
+            background-color: rgb(238, 235, 235);
+            text-align: left;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .sidebar button:hover, .sidebar button.active {
+            background-color: rgb(0, 34, 145);
+            color: #fff;
+        }
+
+
+
+        
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-bottom: 200px;
+        }
+
+
+        .header {
+            background-color: rgb(0, 34, 145);
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .box-contain {
+            width: 100%;
+            margin: 10px auto 0px;
+            border: 1px solid rgb(199, 198, 198);
+            border-radius: 5px;
+            background-color: rgb(245, 243, 243);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .body-contain {
+            padding: 15px;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+        }
+
+        .calendar-file-link {
+            display: inline-block;
+            text-decoration: none; /* Removes underline */
+            color: #e91e63;
+            font-size: 16px;
+            padding: 5px 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .calendar-file-link:hover {
+            color: #333;
+        }
+
+
+
+
+
+
+
+
+    
+/* Back to Top Button Styles */
+.back-to-top-btn {
+    margin-top: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px; /* Pill shape */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+}
+
+.back-to-top-btn:hover {
+    background-color: white;
+    transform: scale(1);
+    box-shadow: 0 6px 15px rgba
+}
+
+
+/* Show the button when scrolling up */
+.show {
+    display: block !important;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}

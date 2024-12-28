@@ -1,0 +1,394 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Main Header */
+.mains-header {
+    display: flex;
+    justify-content: flex-start; /* Space between logo and menu */
+    align-items: center;
+    font-family: 'Garamond', serif;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1200px; /* Optional: You can adjust max width to suit your needs */
+    margin: 0 auto; /* Ensures the header is centered on the page */
+}
+
+
+/* Logo Box */
+.logo-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns logo to the right */
+    width: 220px; /* Adjust width as needed */
+    height: 60px; /* Fixed height */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+
+/* Logo Image */
+.logo img {
+    width: 220%; /* Increase the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+    margin-right: 280px;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    margin-right: -5px;/* Right left move pana*/
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a.active {
+    background-color:rgb(0, 34, 145); /* Active background */
+    color: white; /* Active text color */
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    background-color:rgb(0, 34, 145); /* Hover background */
+    color: #fff; /* Hover text color */
+}
+
+
+
+
+
+         /* Dropdown styles */
+         .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            white-space: nowrap; /* Prevents text wrapping */
+            border-radius: 5px; /* Rounded corners */
+        }
+        
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Keep rounded corners clean */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgb(0, 34, 145);
+        }
+
+
+
+
+
+        
+
+
+    .breadcrumb-section {
+        background: rgb(0, 34, 145);
+        padding: 5px 5px;
+        text-align: center;
+        position: relative;
+    }
+
+    .breadcrumb-section h1 {
+        font-size: 32px;
+        color: white;
+        margin: 0 0 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .breadcrumb-section .breadcrumbs {
+        font-size: 16px;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .breadcrumb-section .breadcrumbs a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .breadcrumb-section .breadcrumbs a:hover {
+        text-decoration: underline;
+        color: white; /* Changes the color to red */
+    }
+    
+    
+
+
+    
+    
+
+
+ 
+  /* Main Content Styles */
+  .main-content {
+    margin-top: 15Px;
+    flex: 1; /* Takes remaining space */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .main-content h1 {
+    color: #6200ea;
+  }
+  
+  .main-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+
+  .justify-text {
+    text-align: justify; /* Justifies the text */
+    line-height: 1.6; /* Adjusts line height for better readability */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    width: 100%; /* Ensures the container has enough space to justify text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #4CAF50;
+    }
+    
+
+
+
+/* Leaders Section */
+.leaders-section .profiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+    padding: 20px; /* Added padding for more space around the section */
+}
+
+.profile {
+    text-align: center;
+    background: rgb(245, 244, 244);
+    border-radius: 15px; /* Slightly larger border radius for a more modern look */
+    padding: 20px;
+    max-width: 500px; /* Increased max-width for better profile size */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
+    overflow: hidden; /* Ensures no overflow if content grows */
+}
+
+.profile:hover {
+    transform: translateY(-15px); /* Increased hover effect for more visibility */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0; /* Slight background color change on hover */
+}
+
+.profile img {
+    width: 160px; /* Increased image size for better visibility */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 15px; /* Added margin for better spacing between image and text */
+}
+
+.profile h4 {
+    font-size: 18px; /* Increased font size for the name */
+    color: #333;
+    margin: 10px 0 8px; /* Adjusted margins for better spacing */
+    font-weight: bold; /* Bolder text for emphasis */
+    word-wrap: break-word; /* Ensures that long names wrap */
+    overflow-wrap: break-word; /* Wraps text in case the name is too long */
+    white-space: normal; /* Ensures text can wrap normally */
+    line-height: 1.4; /* Ensures better readability */
+    transition: color 0.3s, transform 0.3s ease; /* Smooth transition for color and transformation */
+}
+
+.profile h4:hover {
+    color: red; /* Changes text color to green on hover */
+    transform: scale(1.05); /* Slightly increases size on hover */
+}
+
+.profile p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #555;
+    line-height: 1.6; /* Added line height for better text readability */
+    padding: 5px; /* Added padding for spacing around the text */
+    transition: color 0.3s, transform 0.3s ease, padding 0.3s ease; /* Smooth transition for color, transformation, and padding */
+}
+
+.profile p:hover {
+    color: blue; /* Changes text color to blue on hover */
+    transform: scale(1.02); /* Slightly increases size on hover */
+    padding: 12px; /* Increases padding on hover for more spacing */
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .leaders-section .profiles {
+        gap: 20px; /* Slightly smaller gap for medium screens */
+    }
+
+    .profile {
+        max-width: 100%; /* Ensures it takes full width on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .leaders-section .profiles {
+        gap: 15px; /* Smaller gap for mobile */
+    }
+
+    .profile {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .profile img {
+        width: 90px; /* Smaller image size for smaller screens */
+        height: 90px;
+    }
+
+    .profile h4 {
+        font-size: 1.1rem; /* Adjusted font size for mobile */
+    }
+
+    .profile p {
+        font-size: 0.9rem; /* Adjusted font size for better fit */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/* Back to Top Button Styles */
+.back-to-top-btn {
+    margin-top: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px; /* Pill shape */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+}
+
+.back-to-top-btn:hover {
+    background-color: white;
+    transform: scale(1);
+    box-shadow: 0 6px 15px rgba
+}
+
+
+/* Show the button when scrolling up */
+.show {
+    display: block !important;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,130 @@
+.latest-events {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .latest-events h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .events-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Ensures rounded corners apply to everything */
+    margin: 10px; /* Adds space between cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .event-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Prevent images from being too tall */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-bottom: 1px solid rgb(200, 208, 255); /* Clean separation */
+    filter: brightness(95%); /* Slight dimming for a more professional look */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .event-card img {
+      max-height: 150px;
+  }
+}
+
+.event-card img {
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0); /* Fallback styling */
+}
+
+
+
+.event-card img:hover {
+    filter: brightness(100%); /* Restore brightness on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.event-card img {
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0); /* Fallback styling */
+}
+
+
+  
+  .event-card h3 {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    padding: 10px 10px;
+    background-color:#e6eaec; /* Light background for contrast */
+    border-top: 1px solid #ddd; /* Clean separation above the caption */
+    box-shadow: inset 0 -1px 0 #ddd; /* Adds a subtle shadow effect */
+  }
+  
+  
+  .view-more {
+    margin-top: 25px;
+    padding: 12px 25px; /* Increased padding for better visibility */
+    background: linear-gradient(90deg, rgb(0, 34, 145), rgb(0, 80, 200)); /* Added gradient background */
+    color: white;
+    font-size: 18px; /* Slightly larger font size for emphasis */
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Increased border-radius for a softer look */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added initial shadow */
+  }
+  
+  .view-more:hover {
+    background: linear-gradient(90deg, red, rgb(255, 69, 0)); /* Smooth gradient transition on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for hover effect */
+  }
+  
+  .view-more:active {
+    transform: translateY(0); /* Reset movement on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on active state */
+    background: linear-gradient(90deg, rgb(200, 0, 0), rgb(255, 50, 0)); /* Slightly darker color on active state */
+  }
+
+
+
+
+
+  /* Base styles for event cards */
+.event-card {
+  opacity: 0;
+  transform: translateY(40px); /* Slightly larger movement */
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out; /* Slower animation */
+}
+
+/* Slide-in from the left */
+.event-card.left {
+  transform: translateX(-40px); /* Slide-in from the left */
+}
+
+/* Slide-in from the right */
+.event-card.right {
+  transform: translateX(40px); /* Slide-in from the right */
+}
+
+/* When the card becomes visible */
+.event-card.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
+}
